@@ -34,7 +34,7 @@ pipeline {
         }
         stage('Second Step') {
             steps {
-                echo 'Hello World'
+                ech 'Hello World'
             }
         }        
     }
