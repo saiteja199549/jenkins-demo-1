@@ -15,6 +15,14 @@ pipeline {
     triggers {
         cron 'H * * * *'
     }
+    post {
+        always {
+            sh "echo always run"
+        }
+        failure {
+            sh "echo failure run"
+        }
+    }
 
 
     stages {
